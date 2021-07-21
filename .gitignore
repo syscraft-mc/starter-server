@@ -1,0 +1,51 @@
+# Ignored MC Configs:
+
+*console_history*
+banned-ips.json
+banned-players.json
+bukkit.yml
+commands.yml
+help.yml
+ops.json
+paper.yml
+permissions.yml
+server.yml
+spigot.yml
+usercache.json
+version_history.json
+whitelist.json
+server.properties
+
+# Ignored JARs
+
+paper.jar
+plugins/EssentialsX*.jar
+plugins/LuckPerms*.jar
+plugins/Vault.jar
+
+# Ignored Directories
+
+cache/**
+logs/**
+world/**
+world_nether/**
+world_the_end/**
+
+# Specific Ignored Plugin Files
+
+plugins/bStats/**
+plugins/Vault/**
+
+plugins/Essentials/userdata/**
+plugins/Essentials/custom_items.yml
+plugins/Essentials/items.json
+plugins/Essentials/kits.yml
+plugins/Essentials/motd.txt
+plugins/Essentials/tpr.yml
+plugins/Essentials/upgrades-done.yml
+plugins/Essentials/usermap.*
+plugins/Essentials/worth.yml
+
+plugins/LuckPerms/libs/**
+plugins/LuckPerms/translations/**
+plugins/LuckPerms/contexts.json
