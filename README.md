@@ -128,7 +128,7 @@ The basic steps of port forwarding are:
 
 4. Ensure your internal IP is static/bound to your machine. Then: 
 
-      1. Go to your router's list of connected devices (again, explore the control panel to find it) and locate the one which currently has your internal IPv4 as its IP address.
+      1. Go to your router's list of connected devices (explore the control panel to find it) and locate the one which currently has your internal IPv4 as its IP address.
 
       2. Find the button for editing or modifying the connection - sometimes this will be a gear, sometimes a button labelled `EDIT`, and sometimes the information to edit will be simply be displayed.
 
