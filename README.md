@@ -43,6 +43,8 @@ git clone https://github.com/syscraft-mc/starter-server.git MCServer
 
   **Place the downloaded JARs in the `plugins` folder that is inside the MCServer folder.**
 
+> Note: EssentialsXAntibuild **prevents normal users from building anything by default** - this is why we have set up LuckPerms with a `trusted` group for you. Don't forget to read and follow this whole tutorial!
+
 7. Go to https://luckperms.net/download and click on the download button labelled *Bukkit*. **Place the downloaded JAR inside the `plugins` folder that is inside the MCServer folder.**
 
 8. Go to https://www.spigotmc.org/resources/vault.34315/ and click on the download button. **Place the downloaded JAR inside the `plugins` folder that is inside the MCServer folder.**
@@ -149,7 +151,7 @@ Now you have a fully functional Minecraft server! Feel free to play as you'd lik
 
 You can add plugins to this server to change what you can do in it. Spigot plugins, Paper plugins, and any bukkit-based plugins will all work on your server. To add them, simply drag and drop the JAR file of the plugin you downloaded into the plugins folder. 
 
-Most plugins require that you have *permissions* to do things with them. [This is a fantastic resource for understanding and setting up permissions(https://luckperms.net/wiki/Usage). [It also has documentation for prefixes, which are another concept you may want to get into](https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta).
+Most plugins require that you have *permissions* to do things with them. [This is a fantastic resource for understanding and setting up permissions](https://luckperms.net/wiki/Usage). [It also has documentation for prefixes, which are another concept you may want to get into](https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta).
 
 To add permissions to all of your trusted players, you simply look up what the permission is (this is usually found on the documentation website for the plugin), and add it with:
 
@@ -163,7 +165,7 @@ To add permissions to the owner only, perhaps to toggle things or take care of a
 lp group owner permission set <permission here>
 ```
 
-> Note: By default, Owner group has *all* permissions. This is because we've enable the **LuckPerms AutoOp** system for you and given Owner group the permission `luckperms.autoop`!
+> Note: By default, Owner group has *all* permissions. This is because we've enable the **LuckPerms AutoOp** system for you and given Owner group the permission `luckperms.autoop`! This is very different from using the `*` permission, which means every permission as well but includes those permissions that plugin authors do not want people to have, even if they're OPped - things like permissions that prevent actions which OPs should be allowed to do. Never use the `*` on its own!
 
 If you ever want to expand and take your server public, it's best to use a professional hosting company - you can find providers that specialize in Minecraft servers specifically, or even ones that provide a machine (or virtual machine) that you can connect to and set up entirely on your own. 
 
