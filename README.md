@@ -1,6 +1,6 @@
 # Syscraft Starter Server
 
-This is a repository that contains a basic Minecraft server. The server here is *not* intended to be the next Hypixel out of the box, instead it should be seen as an easy way to get an up-to-date Minecraft server quickly, in order to play with some friends in a home-hosted or at least self-hosted environment.
+This is a repository that contains a basic Java Edition Minecraft server. The server here is *not* intended to be the next Hypixel out of the box, instead it should be seen as an easy way to get an up-to-date Minecraft server quickly, in order to play with some friends in a home-hosted or at least self-hosted environment.
 
 Since it's not intended to be fantastic or comprehensive, it contains just a few plugins:
 
@@ -19,6 +19,8 @@ As always, for any help with or questions about the following, feel free to [joi
 At the moment, this example will be for users who want to run a small server on their own Windows machine. **Please have at least 4GB of usable RAM**.
 
 If you do not have Git installed, please do so before starting. [This is a tutorial for installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+Ensure you have Java 16 or newer on the machine the server will be running on - there are multitudes of articles online for how to do this.
 
 1. Open command prompt. This can be done by typing `cmd` into the Windows search bar, or several other methods which you can Google.
 
