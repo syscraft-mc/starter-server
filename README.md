@@ -1,6 +1,6 @@
 # Syscraft Starter Server
 
-This is a repository that contains a basic Minecraft server. The server here is *not* intended to be the next Hypixel out of the box, instead it should be seen as an easy way to get an up-to-date Minecraft server quickly, in order to play with some friends in a home-hosted or at least self-hosted environment.
+This is a repository that contains a basic Java Edition Minecraft server. The server here is *not* intended to be the next Hypixel out of the box, instead it should be seen as an easy way to get an up-to-date Minecraft server quickly, in order to play with some friends in a home-hosted or at least self-hosted environment.
 
 Since it's not intended to be fantastic or comprehensive, it contains just a few plugins:
 
@@ -19,6 +19,8 @@ As always, for any help with or questions about the following, feel free to [joi
 At the moment, this example will be for users who want to run a small server on their own Windows machine. **Please have at least 4GB of usable RAM**.
 
 If you do not have Git installed, please do so before starting. [This is a tutorial for installing Git](https://git-scm.com/book/en/v2/Getting-Started-Installing-Git).
+
+Ensure you have Java 16 or newer on the machine the server will be running on - there are multitudes of articles online for how to do this.
 
 1. Open command prompt. This can be done by typing `cmd` into the Windows search bar, or several other methods which you can Google.
 
@@ -42,6 +44,8 @@ git clone https://github.com/syscraft-mc/starter-server.git MCServer
 - EssentialsXAntiBuild
 
   **Place the downloaded JARs in the `plugins` folder that is inside the MCServer folder.**
+
+> Note: EssentialsXAntibuild **prevents normal users from building anything by default** - this is why we have set up LuckPerms with a `trusted` group for you. Don't forget to read and follow this whole tutorial!
 
 7. Go to https://luckperms.net/download and click on the download button labelled *Bukkit*. **Place the downloaded JAR inside the `plugins` folder that is inside the MCServer folder.**
 
@@ -130,7 +134,7 @@ The basic steps of port forwarding are:
 
 4. Ensure your internal IP is static/bound to your machine. Then: 
 
-      1. Go to your router's list of connected devices (again, explore the control panel to find it) and locate the one which currently has your internal IPv4 as its IP address.
+      1. Go to your router's list of connected devices (explore the control panel to find it) and locate the one which currently has your internal IPv4 as its IP address.
 
       2. Find the button for editing or modifying the connection - sometimes this will be a gear, sometimes a button labelled `EDIT`, and sometimes the information to edit will be simply be displayed.
 
@@ -151,7 +155,7 @@ Now you have a fully functional Minecraft server! Feel free to play as you'd lik
 
 You can add plugins to this server to change what you can do in it. Spigot plugins, Paper plugins, and any bukkit-based plugins will all work on your server. To add them, simply drag and drop the JAR file of the plugin you downloaded into the plugins folder. 
 
-Most plugins require that you have *permissions* to do things with them. [This is a fantastic resource for understanding and setting up permissions(https://luckperms.net/wiki/Usage). [It also has documentation for prefixes, which are another concept you may want to get into](https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta).
+Most plugins require that you have *permissions* to do things with them. [This is a fantastic resource for understanding and setting up permissions](https://luckperms.net/wiki/Usage). [It also has documentation for prefixes, which are another concept you may want to get into](https://luckperms.net/wiki/Prefixes,-Suffixes-&-Meta).
 
 To add permissions to all of your trusted players, you simply look up what the permission is (this is usually found on the documentation website for the plugin), and add it with:
 
@@ -165,7 +169,7 @@ To add permissions to the owner only, perhaps to toggle things or take care of a
 lp group owner permission set <permission here>
 ```
 
-> Note: By default, Owner group has *all* permissions. This is because we've enable the **LuckPerms AutoOp** system for you and given Owner group the permission `luckperms.autoop`!
+> Note: By default, Owner group has *all* permissions. This is because we've enable the **LuckPerms AutoOp** system for you and given Owner group the permission `luckperms.autoop`! This is very different from using the `*` permission, which means every permission as well but includes those permissions that plugin authors do not want people to have, even if they're OPped - things like permissions that prevent actions which OPs should be allowed to do. Never use the `*` on its own!
 
 If you ever want to expand and take your server public, it's best to use a professional hosting company - you can find providers that specialize in Minecraft servers specifically, or even ones that provide a machine (or virtual machine) that you can connect to and set up entirely on your own. 
 
