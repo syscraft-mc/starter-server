@@ -47,11 +47,13 @@ git clone https://github.com/syscraft-mc/starter-server.git MCServer
 
 8. Go to https://www.spigotmc.org/resources/vault.34315/ and click on the download button. **Place the downloaded JAR inside the `plugins` folder that is inside the MCServer folder.**
 
-9. Double click on `start.bat` to start the server! It will take a few moments longer the first time you do it, as the server needs to create your worlds.
+9. As we assume you are on Windows, go to the `startfiles` folder and move `start.bat` out of it and into the main directory. If you are not on Windows, take a look at the README in that folder for information on starting your server on a non-Windows system.
+
+10. Double click on `start.bat` to start the server! It will take a few moments longer the first time you do it, as the server needs to create your worlds.
 
 > You can now connect to the server at the IP address of the machine running it - if it's your own computer, you can connect with the address `localhost`.
 
-10. The server console should have appeared when you started the server. Once it's done starting up, you can input commands into it to tell the server what to do. For your first command, add yourself to the `owner` group using LuckPerms:
+11. The server console should have appeared when you started the server. Once it's done starting up, you can input commands into it to tell the server what to do. For your first command, add yourself to the `owner` group using LuckPerms:
 
 ```
 lp user <your minecraft username> parent add owner
